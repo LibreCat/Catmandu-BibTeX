@@ -5,7 +5,7 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'Catmandu::BibTeX',
     license             => 'perl',
-    dist_version => '0.01',
+    dist_version => '0.02',
     dist_author         => [ 
         'Nicolas Steenlant <nicolas.steenlant@ugent.be>'
         ],
