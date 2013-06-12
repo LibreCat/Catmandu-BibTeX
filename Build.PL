@@ -5,10 +5,12 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'Catmandu::BibTeX',
     license             => 'perl',
+    dist_version => '0.01',
     dist_author         => [ 
         'Nicolas Steenlant <nicolas.steenlant@ugent.be>'
         ],
     dist_version_from   => 'lib/Catmandu/BibTeX.pm',
+    dist_abstract => 'Catmandu::BibTeX - modules for working with bibtex data',
     release_status      => 'stable',
     build_requires => {
         'Software::License' => 0,
@@ -16,8 +18,8 @@ my $builder = Module::Build->new(
         'Test::More' => 0,
     },
     requires => {
-        'Catmandu' => '0.3',
-        'LaTeX::Encode' => '1.0',
+        'Catmandu' => '0.2',
+        'LaTeX::Encode' => '0.08',
     },
     add_to_cleanup     => [ 'Catmandu-BibTeX-*' ],
     create_makefile_pl => 'traditional',
