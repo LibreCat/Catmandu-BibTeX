@@ -2,11 +2,11 @@ package Catmandu::BibTeX;
 
 =head1 NAME
 
-Catḿandu::BibTeX - Catmandu modules for working with bibtex data
+Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -22,11 +22,11 @@ our $VERSION = '0.02';
 
 =head1 AUTHOR
 
-Nicolas Steenlant C<<nicolas.steenlant@ugent.be>>
+Nicolas Steenlant C<< <nicolas.steenlant at ugent.be> >>
 
-=head1 Contributors
+=head1 CONTRIBUTORS
 
-Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
+Vitali Peil C<< <vitali.peil at uni-bielefeld.de> >>
 
 =head1 LICENSE AND COPYRIGHT
 
