@@ -13,6 +13,7 @@ my $builder = Module::Build->new(
         'perl' => '5.10.1',
         'Catmandu' => '0.2',
         'LaTeX::Encode' => '0.08',
+        'namespace::clean' => '0.24',
     },
     add_to_cleanup     => [ 'Catmandu-BibTeX-*' ],
     create_makefile_pl => 'traditional',
