@@ -21,8 +21,9 @@ sub generator {
             if ($entry->parse_ok) {
                 $bib->{type} = lc $entry->type;
                 if ($decode) {
-                    map { $bib->{$_} = latex_decode($entry->field($_)) } 
-                        $entry->fieldlist;
+                    #map { $bib->{$_} = latex_decode($entry->field($_)) } 
+                    #    $entry->fieldlist;
+                    Catmandu::NotImplemented->throw("decode option needs testing");
                 } else {
                     map { $bib->{$_} = $entry->field($_) } 
                         $entry->fieldlist;
