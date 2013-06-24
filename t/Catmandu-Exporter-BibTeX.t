@@ -26,7 +26,7 @@ my %attrs = (
 	fh => $bibtex,
 );
 
-my $exporter = Catmandu::Exporter::BibTeX->new(%attrs);
+my $exporter = $pkg->new(%attrs);
 
 isa_ok($exporter, $pkg);
 

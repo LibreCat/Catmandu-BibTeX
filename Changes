@@ -1,4 +1,7 @@
 Revision history for Catmandu-BibTeX
 
+0.03	2013-06-24
+	- module Catmandu::Importer::BibTeX + test added
+
 0.02	2013-06-12
 	- initial release 
