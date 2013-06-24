@@ -14,7 +14,7 @@ require_ok($pkg);
 
 my $data = [
   {
-    type => uc 'inproceedings',
+    type => 'inproceedings',
     author => 'Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia',
     language => 'English',
     publisher => 'IEEE',
@@ -22,7 +22,7 @@ my $data = [
     year => '2013'
   },
   {
-    type => uc 'article',
+    type => 'article',
     author => 'Lohse, Manja and Hegel, Frank and Wrede, Britta',
     journal => 'Journal of Physical Agents',
     pages => '21--32',
