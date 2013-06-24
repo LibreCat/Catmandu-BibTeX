@@ -6,7 +6,7 @@ Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
@@ -15,6 +15,8 @@ our $VERSION = '0.03';
 =head1 MODULES
 
 =over
+
+=item * L<Catmandu::Importer::BibTeX>
 
 =item * L<Catmandu::Exporter::BibTeX>
 

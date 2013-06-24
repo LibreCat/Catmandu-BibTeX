@@ -2,11 +2,12 @@ Build.PL
 Changes
 lib/Catmandu/BibTeX.pm
 lib/Catmandu/Exporter/BibTeX.pm
+lib/Catmandu/Importer/BibTeX.pm
 LICENSE
-MANIFEST			This list of files
-README
-t/00-load.t
-t/01-post-load.t
 Makefile.PL
-META.yml
+MANIFEST			This list of files
 META.json
+META.yml
+README
+t/Catmandu-Exporter-BibTeX.t
+t/Catmandu-Importer-BibTeX.t
