@@ -11,7 +11,8 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => '5.10.1',
-        'Catmandu' => '0.2',
+        'Catmandu' => '0.5',
+        'BibTeX::Parser' => '0.64',
         'LaTeX::Encode' => '0.08',
         'namespace::clean' => '0.24',
     },
