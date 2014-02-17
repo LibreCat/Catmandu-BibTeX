@@ -14,6 +14,7 @@ my $TAGS = [qw(
     author
     booktitle
     chapter
+    day
     edition
     editor
     eprint
@@ -52,8 +53,8 @@ sub add {
     my ($self, $data) = @_;
     my $fh = $self->fh;
 
-    my $type = $data->{_type} || 'misc';
-    my $citekey = $data->{_citekey} || $data->{_id} || $self->count;
+    my $type = $data->{type} || $data->{_type} || 'misc';
+    my $citekey = $data->{_citekey} || $data->{_id} || $self->count + 1;
 
     for my $tag (keys %$JOIN) {
         my $val = $data->{$tag};
@@ -90,7 +91,7 @@ Catmandu::Exporter::BibTeX - a BibTeX exporter
     $exporter->add($hashref);
 
     $exporter->add({
-     _type    => 'book',
+     type    => 'book',
      _citekey => '389-ajk0-1',
      title    => 'the Zen of {CSS} design',
      author   => ['Dave Shea','Molley E. Holzschlag'],
@@ -101,21 +102,32 @@ Catmandu::Exporter::BibTeX - a BibTeX exporter
 
 =head1 DESCRIPTION
 
-The BibTeX exporter requires as input a Perl hash (or a fix) containing BibTeX
-fields and values as a string or array reference.
+The BibTeX L<Catmandu::Exporter> requires as input a Perl hash (or a fix)
+containing BibTeX fields and values as a string or array reference.
+
+=head1 SUPPORTED FIELDS
 
 Two special fields can be set in the Perl hash:
 
- _type : to describe the document type (article, book, ...)
- _citekey : to describt the citation key
+=over
 
-=head1 SUPPORTED FIELDS
+=item C<type> or C<_type>
+
+to describe the document type (article, book, ...). Set to 'misc' by default.
+
+=item C<_citekey> or C<_id>
+
+to describt the citation key. The next counter value (starting from 1) is used
+by default.
+
+The following BibTeX fields are supported. All other fields are ignored.
 
     abstract
     address
     author
     booktitle
     chapter
+    day
     edition
     editor
     eprint
@@ -142,10 +154,10 @@ Two special fields can be set in the Perl hash:
     volume
     year
 
-
 =head1 SEE ALSO
 
-L<Catmandu::Exporter>
+Use L<Catmandu::Fix::expand_date> to expand a date field with year, month, and day
+into the corresponding BibTeX fields.
 
 =cut
 
