@@ -17,6 +17,7 @@ sub generator {
             if ($entry->parse_ok) {
                 map { $bib->{$_} = $entry->field($_) } $entry->fieldlist;
                 $bib->{type} = lc $entry->type;
+                $bib->{_citekey} = $entry->key;
                 return $bib;
             } else {
                 Catmandu::Error->throw($entry->error);
@@ -41,23 +42,20 @@ Catmandu::Importer::BibTeX - a BibTeX importer
         # ...
     }); 
 
+=head1 DESCRIPTION
+
+Citekey and reference type are imported as field C<_citekey> and C<_type>,
+respectively.
+
 =head1 METHODS
 
-=head2 new([file => $filename])
-
-Create a new BibTeX importer for $filename. Uses STDIN when no filename is given.
-
-=head2 count
-
-=head2 each(&callback)
-
-=head2 ...
-
-Every Catmandu::Importer is a Catmandu::Iterable all its methods are inherited.
+All methods of L<Catmandu::Importer> and by this L<Catmandu::Iterable> are
+inherited.
 
 =head1 SEE ALSO
 
-L<Catmandu::Importer>, L<Catmandu::Exporter::BibTeX>
+L<Catmandu::Exporter::BibTeX>,
+L<BibTeX::Parser>
 
 =cut
 
