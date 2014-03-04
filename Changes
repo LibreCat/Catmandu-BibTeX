@@ -5,6 +5,7 @@ Revision history for Catmandu-BibTeX
   - default citekey starts at 1
   - document default citekey
   - fix roundtripping
+  - add project links to build script
 
 0.03  2013-06-24
   - BibTeX importer
