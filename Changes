@@ -1,5 +1,11 @@
 Revision history for Catmandu-BibTeX
 
+0.04  2014-03-04
+  - date expansion
+  - default citekey starts at 1
+  - document default citekey
+  - fix roundtripping
+
 0.03  2013-06-24
   - BibTeX importer
 
