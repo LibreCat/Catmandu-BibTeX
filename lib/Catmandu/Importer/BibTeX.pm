@@ -12,7 +12,7 @@ sub generator {
     my $fh = $self->fh;
     sub {
         my $parser = BibTeX::Parser->new($fh);
-        while (my $entry = $parser->next ) {
+        while (my $entry = $parser->next) {
             my $bib = {};
             if ($entry->parse_ok) {
                 map { $bib->{$_} = $entry->field($_) } $entry->fieldlist;

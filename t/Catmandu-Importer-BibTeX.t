@@ -14,20 +14,22 @@ require_ok($pkg);
 
 my $data = [
   {
+    _citekey => '2602779',
     type => 'inproceedings',
     author => 'Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia',
     language => 'English',
     publisher => 'IEEE',
     title => 'A Computational Model of Empathy: Empirical Evaluation',
-    year => '2013'
+    year => '2013',
   },
   {
+    _citekey => '1890757',
     type => 'article',
     author => 'Lohse, Manja and Hegel, Frank and Wrede, Britta',
     journal => 'Journal of Physical Agents',
     pages => '21--32',
     title => 'Domestic Applications for social robots - a user study on appearance and function',
-    year => '2008',    
+    year => '2008',
     },
 ];
 
