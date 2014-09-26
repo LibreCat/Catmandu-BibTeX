@@ -1,5 +1,7 @@
 Revision history for Catmandu-BibTeX
 
+{{$NEXT}}
+
 0.04  2014-03-04
   - date expansion
   - default citekey starts at 1
