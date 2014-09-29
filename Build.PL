@@ -18,7 +18,7 @@ my %module_build_args = (
     "Nicolas Steenlant C<< <nicolas.steenlant at ugent.be> >>"
   ],
   "dist_name" => "Catmandu-BibTeX",
-  "dist_version" => "0.04",
+  "dist_version" => "0.05",
   "license" => "perl",
   "module_name" => "Catmandu::BibTeX",
   "recommends" => {},
@@ -32,7 +32,6 @@ my %module_build_args = (
   },
   "script_files" => [],
   "test_requires" => {
-    "Test::Exception" => "0.32",
     "Test::More" => "0.88"
   }
 );
@@ -40,7 +39,6 @@ my %module_build_args = (
 
 my %fallback_build_requires = (
   "Module::Build" => "0.3601",
-  "Test::Exception" => "0.32",
   "Test::More" => "0.88"
 );
 

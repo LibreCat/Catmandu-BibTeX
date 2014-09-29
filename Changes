@@ -2,6 +2,10 @@ Revision history for Catmandu-BibTeX
 
 {{$NEXT}}
 
+0.05  2014-09-29 18:16:59 CEST
+  - moved to milla
+  - tests + badges
+
 0.04  2014-03-04
   - date expansion
   - default citekey starts at 1

@@ -50,13 +50,23 @@
       },
       "test" : {
          "requires" : {
-            "Test::Exception" : "0.32",
             "Test::More" : "0.88"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.04",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/LibreCat/Catmandu-BibTeX/issues"
+      },
+      "homepage" : "https://github.com/LibreCat/Catmandu-BibTeX",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/LibreCat/Catmandu-BibTeX.git",
+         "web" : "https://github.com/LibreCat/Catmandu-BibTeX"
+      }
+   },
+   "version" : "0.05",
    "x_contributors" : [
       "Jakob Voss <voss@gbv.de>",
       "Nicolas Steenlant <nicolas.steenlant@ugent.be>",
