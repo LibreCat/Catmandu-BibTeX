@@ -1,9 +1,6 @@
-#!/usr/bin/env perl
-
 use strict;
 use warnings;
 use Test::More;
-use Test::Exception;
 
 my $pkg;
 BEGIN {
@@ -22,11 +19,18 @@ my $bibtex = <<TEX;
 }
 TEX
 
-my %attrs = (
-	fh => $bibtex,
-);
+my $data = {
+	_citekey => 2602779,
+	_type => 'inproceedings',
+	author => ["Boukricha, Hand", "Wachsmuth, Ipke", "Carminati, Maria Nella", "Knoeferle, Pia"],
+	language => 'English',
+	publisher => 'IEEE',
+	year => 2013,
+	title => 'A Computational Model of Empathy: Empirical Evaluation',
+};
 
-my $exporter = $pkg->new(%attrs);
+my $bibtex_out;
+my $exporter = $pkg->new(file => \$bibtex_out);
 
 isa_ok($exporter, $pkg);
 
@@ -34,4 +38,7 @@ can_ok($exporter, 'add');
 
 can_ok($exporter, 'add_many');
 
-done_testing 5;
+$exporter->add($data);
+#is($bibtex, $bibtex_out, "compare output");
+
+done_testing;

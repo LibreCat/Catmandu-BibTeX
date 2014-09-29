@@ -10,7 +10,6 @@ on configure => sub {
 
 on test => sub {
     requires 'Test::More', '0.88';
-    requires 'Test::Exception', '0.32';
 };
 
 requires 'Catmandu';

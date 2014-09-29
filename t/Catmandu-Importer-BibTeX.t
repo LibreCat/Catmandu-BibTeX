@@ -1,9 +1,6 @@
-#!/usr/bin/env perl
-
 use strict;
 use warnings;
 use Test::More;
-use Test::Exception;
 
 my $pkg;
 BEGIN {
@@ -58,4 +55,4 @@ isa_ok $importer, $pkg;
 
 is_deeply $importer->to_array, $data;
 
-done_testing 5;
+done_testing;
