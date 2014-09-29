@@ -120,6 +120,8 @@ to describe the document type (article, book, ...). Set to 'misc' by default.
 to describt the citation key. The next counter value (starting from 1) is used
 by default.
 
+=back
+
 The following BibTeX fields are supported. All other fields are ignored.
 
     abstract
