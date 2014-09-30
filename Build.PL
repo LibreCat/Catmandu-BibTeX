@@ -18,7 +18,7 @@ my %module_build_args = (
     "Nicolas Steenlant C<< <nicolas.steenlant at ugent.be> >>"
   ],
   "dist_name" => "Catmandu-BibTeX",
-  "dist_version" => "0.05",
+  "dist_version" => "0.06",
   "license" => "perl",
   "module_name" => "Catmandu::BibTeX",
   "recommends" => {},

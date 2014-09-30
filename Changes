@@ -2,6 +2,9 @@ Revision history for Catmandu-BibTeX
 
 {{$NEXT}}
 
+0.06  2014-09-30 09:36:49 CEST
+  - well, see 0.05
+
 0.05  2014-09-29 18:16:59 CEST
   - moved to milla
   - tests + badges
