@@ -15,9 +15,9 @@ Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 =begin HTML
 
 <p>
-<a href="https://travis-ci.org/LibreCat/Catmandu-BibTeX"><img src="https://travis-ci.org/LibreCat/Catmandu-Catmandu-BibTeX.svg?branch=master" alt="build status" /></a>
-<a href="https://coveralls.io/r/LibreCat/Catmandu-Catmandu-BibTeX"><img src="https://coveralls.io/repos/LibreCat/Catmandu-Catmandu-BibTeX/badge.png?branch=master" alt="coverage status" /></a>
-<a href="http://cpants.cpanauthors.org/dist/Catmandu-Catmandu-BibTeX"><img src="http://cpants.cpanauthors.org/dist/Catmandu-Catmandu-BibTeX.png" alt="kwalitee score" /></a>
+<a href="https://travis-ci.org/LibreCat/Catmandu-BibTeX"><img src="https://travis-ci.org/LibreCat/Catmandu-BibTeX.svg?branch=master" alt="build status" /></a>
+<a href="https://coveralls.io/r/LibreCat/Catmandu-BibTeX"><img src="https://coveralls.io/repos/LibreCat/Catmandu-BibTeX/badge.png?branch=master" alt="coverage status" /></a>
+<a href="http://cpants.cpanauthors.org/dist/Catmandu-BibTeX"><img src="http://cpants.cpanauthors.org/dist/Catmandu-BibTeX.png" alt="kwalitee score" /></a>
 </p>
 
 =end HTML
@@ -39,7 +39,8 @@ Nicolas Steenlant C<< <nicolas.steenlant at ugent.be> >>
 =head1 CONTRIBUTORS
 
 Vitali Peil C<< <vitali.peil at uni-bielefeld.de> >>
-Jakov Voss C<< <voss@gbv.de> >>
+
+Jakov Voss C<< <voss at gbv.de> >>
 
 =head1 LICENSE AND COPYRIGHT
 
