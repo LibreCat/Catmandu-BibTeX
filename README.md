@@ -15,9 +15,13 @@ Nicolas Steenlant `<nicolas.steenlant at ugent.be>`
 
 # CONTRIBUTORS
 
-Vitali Peil `<vitali.peil at uni-bielefeld.de>`
+- Vitali Peil `<vitali.peil at uni-bielefeld.de>`
+- Jakov Voss `<voss at gbv.de>`
 
-Jakov Voss `<voss at gbv.de>`
+# MAINTAINER
+
+- Vitali Peil `<vitali.peil at uni-bielefeld.de>`
+- Christian Pietsch `<cpietsch+librecat at uni-bielefeld.de>`
 
 # LICENSE AND COPYRIGHT
 
