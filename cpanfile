@@ -15,4 +15,3 @@ on test => sub {
 requires 'Catmandu';
 requires 'Moo';
 requires 'BibTeX::Parser';
-requires 'LaTeX::Encode';

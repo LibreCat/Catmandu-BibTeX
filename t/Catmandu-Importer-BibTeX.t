@@ -22,7 +22,7 @@ my $data = [
   {
     _citekey => '1890757',
     type => 'article',
-    author => 'Lohse, Manja and Hegel, Frank and Wrede, Britta',
+    author => 'Lohse, Manja and Hegel, Frank and Wrede, Britta and γλώσσα',
     journal => 'Journal of Physical Agents',
     pages => '21--32',
     title => 'Domestic Applications for social robots - a user study on appearance and function',
@@ -39,7 +39,7 @@ my $bibtex = <<TEX;
   year         = {2013},
 }
 \@article{1890757,
-  author       = {Lohse, Manja and Hegel, Frank and Wrede, Britta},
+  author       = {Lohse, Manja and Hegel, Frank and Wrede, Britta and γλώσσα},
   journal      = {Journal of Physical Agents},
   pages        = {21--32},
   title        = {Domestic Applications for social robots - a user study on appearance and function},

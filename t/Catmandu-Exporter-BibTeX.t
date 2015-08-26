@@ -11,7 +11,7 @@ require_ok($pkg);
 
 my $bibtex = <<TEX;
 \@inproceedings{2602779,
-  author       = {Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia},
+  author       = {Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia and Müller-Leßmann, Stephan},
   language     = {English},
   publisher    = {IEEE},
   title        = {A Computational Model of Empathy: Empirical Evaluation},
@@ -22,7 +22,7 @@ TEX
 my $data = {
 	_citekey => 2602779,
 	_type => 'inproceedings',
-	author => ["Boukricha, Hand", "Wachsmuth, Ipke", "Carminati, Maria Nella", "Knoeferle, Pia"],
+	author => ["Boukricha, Hand", "Wachsmuth, Ipke", "Carminati, Maria Nella", "Knoeferle, Pia", "Müller-Leßmann, Stephan"],
 	language => 'English',
 	publisher => 'IEEE',
 	year => 2013,

@@ -2,7 +2,6 @@ package Catmandu::Exporter::BibTeX;
 
 use namespace::clean;
 use Catmandu::Sane;
-use LaTeX::Encode;
 use Moo;
 
 with 'Catmandu::Exporter';
@@ -67,7 +66,7 @@ sub add {
 
     for my $tag (@$TAGS) {
         if (my $val = $data->{$tag}) {
-            printf $fh "  %-12s = {%s},\n", $tag, latex_encode($val);
+            printf $fh "  %-12s = {%s},\n", $tag, $val;
         }
     }
 
