@@ -12,15 +12,15 @@ Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 
 =head1 STATUS
 
-=begin HTML
+=begin markdown
 
-<p>
-<a href="https://travis-ci.org/LibreCat/Catmandu-BibTeX"><img src="https://travis-ci.org/LibreCat/Catmandu-BibTeX.svg?branch=master" alt="build status" /></a>
-<a href="https://coveralls.io/r/LibreCat/Catmandu-BibTeX"><img src="https://coveralls.io/repos/LibreCat/Catmandu-BibTeX/badge.png?branch=master" alt="coverage status" /></a>
-<a href="http://cpants.cpanauthors.org/dist/Catmandu-BibTeX"><img src="http://cpants.cpanauthors.org/dist/Catmandu-BibTeX.png" alt="kwalitee score" /></a>
-</p>
+# STATUS
 
-=end HTML
+[![Build Status](https://travis-ci.org/LibreCat/Catmandu-BibTeX.svg?branch=master)](https://travis-ci.org/LibreCat/Catmandu-BibTeX)
+[![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-BibTeX/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-BibTeX)
+[![CPANTS kwalitee](http://cpants.cpanauthors.org/dist/Catmandu-BibTeX.png)](http://cpants.cpanauthors.org/dist/Catmandu-BibTeX)
+
+=end markdown
 
 =head1 MODULES
 

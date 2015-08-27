@@ -4,6 +4,12 @@ Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 
 # STATUS
 
+# STATUS
+
+[![Build Status](https://travis-ci.org/LibreCat/Catmandu-BibTeX.svg?branch=master)](https://travis-ci.org/LibreCat/Catmandu-BibTeX)
+[![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-BibTeX/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-BibTeX)
+[![CPANTS kwalitee](http://cpants.cpanauthors.org/dist/Catmandu-BibTeX.png)](http://cpants.cpanauthors.org/dist/Catmandu-BibTeX)
+
 # MODULES
 
 - [Catmandu::Importer::BibTeX](https://metacpan.org/pod/Catmandu::Importer::BibTeX)
@@ -15,13 +21,9 @@ Nicolas Steenlant `<nicolas.steenlant at ugent.be>`
 
 # CONTRIBUTORS
 
-- Vitali Peil `<vitali.peil at uni-bielefeld.de>`
-- Jakov Voss `<voss at gbv.de>`
+Vitali Peil `<vitali.peil at uni-bielefeld.de>`
 
-# MAINTAINER
-
-- Vitali Peil `<vitali.peil at uni-bielefeld.de>`
-- Christian Pietsch `<cpietsch+librecat at uni-bielefeld.de>`
+Jakov Voss `<voss at gbv.de>`
 
 # LICENSE AND COPYRIGHT
 
