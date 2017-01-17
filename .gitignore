@@ -3,6 +3,8 @@
 /.build
 /_build*
 /Build
+local/*
 MYMETA.*
 !META.json
 /.prove
+cpanfile.snapshot
