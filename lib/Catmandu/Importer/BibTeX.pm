@@ -18,6 +18,16 @@ sub generator {
                 map { $bib->{$_} = $entry->field($_) } $entry->fieldlist;
                 $bib->{type} = lc $entry->type;
                 $bib->{_citekey} = $entry->key;
+
+                if ($bib->{author} && $bib->{author} =~ / and /) {
+                  my $tmp = $bib->{author}; delete $bib->{author};
+                  @{$bib->{author}} = split(/ and /, $tmp);
+                }
+                if ($bib->{editor} && $bib->{editor} =~ / and /) {
+                  my $tmp = $bib->{editor}; delete $bib->{editor};
+                  @{$bib->{editor}} = split(/ and /, $tmp);
+                }
+
                 return $bib;
             } else {
                 Catmandu::Error->throw($entry->error);
@@ -40,7 +50,7 @@ Catmandu::Importer::BibTeX - a BibTeX importer
     my $n = $importer->each(sub {
         my $hashref = $_[0];
         # ...
-    }); 
+    });
 
 =head1 DESCRIPTION
 

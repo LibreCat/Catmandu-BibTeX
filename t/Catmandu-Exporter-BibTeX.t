@@ -9,6 +9,7 @@ BEGIN {
 }
 require_ok($pkg);
 
+# don't touch this! Exporter adds newline at the end.
 my $bibtex = <<TEX;
 \@inproceedings{2602779,
   author       = {Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia and Müller-Leßmann, Stephan},
@@ -17,12 +18,13 @@ my $bibtex = <<TEX;
   title        = {A Computational Model of Empathy: Empirical Evaluation},
   year         = {2013},
 }
+
 TEX
 
 my $data = {
 	_citekey => 2602779,
 	_type => 'inproceedings',
-	author => ["Boukricha, Hand", "Wachsmuth, Ipke", "Carminati, Maria Nella", "Knoeferle, Pia", "Müller-Leßmann, Stephan"],
+	author => ["Boukricha, Hana", "Wachsmuth, Ipke", "Carminati, Maria Nella", "Knoeferle, Pia", "Müller-Leßmann, Stephan"],
 	language => 'English',
 	publisher => 'IEEE',
 	year => 2013,
@@ -39,6 +41,7 @@ can_ok($exporter, 'add');
 can_ok($exporter, 'add_many');
 
 $exporter->add($data);
-#is($bibtex, $bibtex_out, "compare output");
+
+is($bibtex, $bibtex_out, "compare output");
 
 done_testing;

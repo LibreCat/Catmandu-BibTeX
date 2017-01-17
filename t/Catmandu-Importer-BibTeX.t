@@ -13,7 +13,8 @@ my $data = [
   {
     _citekey => '2602779',
     type => 'inproceedings',
-    author => 'Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia',
+    author => ['Boukricha, Hana', 'Wachsmuth, Ipke', 'Carminati, Maria Nella', 'Knoeferle, Pia'],
+    editor => 'Turing, Alan',
     language => 'English',
     publisher => 'IEEE',
     title => 'A Computational Model of Empathy: Empirical Evaluation',
@@ -22,7 +23,7 @@ my $data = [
   {
     _citekey => '1890757',
     type => 'article',
-    author => 'Lohse, Manja and Hegel, Frank and Wrede, Britta and γλώσσα',
+    author => 'γλώσσα',
     journal => 'Journal of Physical Agents',
     pages => '21--32',
     title => 'Domestic Applications for social robots - a user study on appearance and function',
@@ -33,13 +34,14 @@ my $data = [
 my $bibtex = <<TEX;
 \@inproceedings{2602779,
   author       = {Boukricha, Hana and Wachsmuth, Ipke and Carminati, Maria Nella and Knoeferle, Pia},
+  editor       = {Turing, Alan},
   language     = {English},
   publisher    = {IEEE},
   title        = {A Computational Model of Empathy: Empirical Evaluation},
   year         = {2013},
 }
 \@article{1890757,
-  author       = {Lohse, Manja and Hegel, Frank and Wrede, Britta and γλώσσα},
+  author       = {γλώσσα},
   journal      = {Journal of Physical Agents},
   pages        = {21--32},
   title        = {Domestic Applications for social robots - a user study on appearance and function},
