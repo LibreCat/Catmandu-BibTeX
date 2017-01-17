@@ -2,6 +2,11 @@ Revision history for Catmandu-BibTeX
 
 {{$NEXT}}
 
+0.08  2017-01-17 08:01:25 CET
+  - support importing authors/editors as if,
+    i.e. single authors will be SCALARs and multiple authors
+    will be ARRAYs
+
 0.07  2015-08-26 10:29:12 CEST
   - remove latex_encode, leave utf-8 untouched
 
