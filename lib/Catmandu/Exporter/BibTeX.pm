@@ -1,5 +1,7 @@
 package Catmandu::Exporter::BibTeX;
 
+our $VERSION = '0.10';
+
 use namespace::clean;
 use Catmandu::Sane;
 use Clone qw(clone);
