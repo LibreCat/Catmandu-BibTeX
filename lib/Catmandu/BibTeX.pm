@@ -1,6 +1,6 @@
 package Catmandu::BibTeX;
 
-our $VERSION = '0.08';
+our $VERSION = '0.10';
 
 1;
 
