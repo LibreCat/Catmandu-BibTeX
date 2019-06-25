@@ -4,8 +4,6 @@ Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 
 # STATUS
 
-# STATUS
-
 [![Build Status](https://travis-ci.org/LibreCat/Catmandu-BibTeX.svg?branch=master)](https://travis-ci.org/LibreCat/Catmandu-BibTeX)
 [![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-BibTeX/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-BibTeX)
 
