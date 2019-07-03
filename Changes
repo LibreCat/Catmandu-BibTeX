@@ -2,6 +2,9 @@ Revision history for Catmandu-BibTeX
 
 {{$NEXT}}
 
+0.13  2019-07-03 15:45:24 CEST
+  - fix typo (keyword --> keywords) in exporter
+
 0.12  2019-06-25 16:14:43 CEST
   - use Test2::V0 for test
   - travis-ci update
