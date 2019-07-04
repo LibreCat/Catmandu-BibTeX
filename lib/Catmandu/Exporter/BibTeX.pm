@@ -48,7 +48,7 @@ my $JOIN = {
     author   => ' and ',
     editor   => ' and ',
     language => ',',
-    keyword  => ',',
+    keywords  => ',',
 };
 
 sub add {
