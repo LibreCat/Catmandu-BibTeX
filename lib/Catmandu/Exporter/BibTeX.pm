@@ -1,6 +1,6 @@
 package Catmandu::Exporter::BibTeX;
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 use namespace::clean;
 use Catmandu::Sane;
