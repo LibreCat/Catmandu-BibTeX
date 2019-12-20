@@ -27,6 +27,8 @@ __END__
 
 =pod
 
+=encoding utf8
+
 =head1 NAME
 
 Catmandu::Fix::latex_decode - decode test from LaTeX to Unicode
