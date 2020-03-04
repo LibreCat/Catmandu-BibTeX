@@ -1,6 +1,8 @@
 Revision history for Catmandu-BibTeX
 
 {{$NEXT}}
+
+0.18  2020-03-04 13:39:24 CET
   - fix travis build
 
 0.17  2020-03-04 13:28:49 CET
