@@ -3,6 +3,7 @@ Revision history for Catmandu-BibTeX
 {{$NEXT}}
   - translate latex field values to unicode
   - better author/editor field handling
+  - author and fields are always an array
 
 0.15  2019-12-20 08:43:00 CET
   - add fix latex_decode
