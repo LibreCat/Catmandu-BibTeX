@@ -9,8 +9,8 @@ Catmandu::BibTeX - Catmandu modules for working with BibTeX data
 
 # MODULES
 
-- [Catmandu::Importer::BibTeX](https://metacpan.org/pod/Catmandu::Importer::BibTeX)
-- [Catmandu::Exporter::BibTeX](https://metacpan.org/pod/Catmandu::Exporter::BibTeX)
+- [Catmandu::Importer::BibTeX](https://metacpan.org/pod/Catmandu%3A%3AImporter%3A%3ABibTeX)
+- [Catmandu::Exporter::BibTeX](https://metacpan.org/pod/Catmandu%3A%3AExporter%3A%3ABibTeX)
 
 # AUTHOR
 

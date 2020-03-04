@@ -11,7 +11,7 @@ my $data = [
             'Carminati, Maria Nella',
             'Knoeferle, Pia'
         ],
-        editor    => 'Turing, Alan',
+        editor    => ['Turing, Alan',],
         language  => 'English',
         publisher => 'IEEE',
         title     => 'A Computational Model of Empathy: Empirical Evaluation',
@@ -20,7 +20,7 @@ my $data = [
     {
         _citekey => '1890757',
         type     => 'article',
-        author   => 'γλώσσα',
+        author   => ['γλώσσα',],
         journal  => 'Journal of Physical Agents',
         pages    => '21--32',
         title =>
