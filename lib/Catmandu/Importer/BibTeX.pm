@@ -29,10 +29,12 @@ sub generator {
                 $bib->{_citekey} = $entry->key;
 
                 if (my @authors = $entry->cleaned_author) {
-                    $bib->{author} = [map { $self->_contributor_name($_) } @authors];
+                    $bib->{author}
+                        = [map {$self->_contributor_name($_)} @authors];
                 }
                 if (my @editors = $entry->cleaned_editor) {
-                    $bib->{editor} = [map { $self->_contributor_name($_) } @editors];
+                    $bib->{editor}
+                        = [map {$self->_contributor_name($_)} @editors];
                 }
 
                 for my $field ($entry->fieldlist) {
@@ -41,7 +43,8 @@ sub generator {
                 }
 
                 return $bib;
-            } else {
+            }
+            else {
                 Catmandu::Error->throw($entry->error);
             }
         }

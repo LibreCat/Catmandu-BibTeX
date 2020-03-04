@@ -18,7 +18,8 @@ has opts => (fix_opt => 'collect');
 sub _build_fixer {
     my ($self) = @_;
     my $opts = $self->opts;
-    as_path($self->path)->updater(if_string => sub {latex_decode($_[0], %$opts)});
+    as_path($self->path)
+        ->updater(if_string => sub {latex_decode($_[0], %$opts)});
 }
 
 1;
