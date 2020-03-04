@@ -1,6 +1,8 @@
 Revision history for Catmandu-BibTeX
 
 {{$NEXT}}
+
+0.16  2020-03-04 13:21:27 CET
   - translate latex field values to unicode
   - better author/editor field handling
   - author and fields are always an array
