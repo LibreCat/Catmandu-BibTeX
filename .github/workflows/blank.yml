@@ -15,7 +15,6 @@ jobs:
       fail-fast: false
       matrix:
         perl-version:
-          - 'latest'
           - '5.32'
           - '5.30'
           - '5.20'
@@ -27,6 +26,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Regular tests
         run: |
+          cpanm Dist::Milla
           milla listdeps --missing | cpanm --notest
           milla listdeps --author --missing | cpanm --notest
           milla test
