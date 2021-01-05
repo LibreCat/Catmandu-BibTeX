@@ -27,6 +27,6 @@ jobs:
       - name: Regular tests
         run: |
           cpanm Dist::Milla
-          milla listdeps --missing | cpanm --notest
-          milla listdeps --author --missing | cpanm --notest
+          milla listdeps| cpanm --notest
+          milla listdeps --author | cpanm --notest
           milla test
