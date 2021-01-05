@@ -1,0 +1,60 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI for Perl Projects
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events
+  push:
+    branches:
+      - master
+      - dev
+      - pr/**
+  pull_request:
+    branches:
+      - master
+      - dev
+      - pr/**
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ['ubuntu-latest']
+        perl: [ '5.28', '5.26', '5.24' , '5.20' , '5.18' , '5.16' , '5.14' , '5.12' , 5.10' ]
+    name: Perl ${{ matrix.perl }} on ${{ matrix.os }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a perl version
+      - uses: shogo82148/actions-setup-perl@v1
+        with:
+           perl-version: '5.10'
+
+      - name: before install
+        run: |
+          cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+          cpanm --notest Perl::Tidy
+          cpanm --notest Test::Code::TidyAll
+
+      - name: install
+        run: |
+          cpanm --quiet --installdeps --notest --force --skip-satisfied .
+
+      - name: script
+        run: |
+          perl Build.PL && ./Build build && ./Build test
+
+      - name: after success
+        run: |
+          cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Coveralls
