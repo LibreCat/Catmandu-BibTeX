@@ -70,7 +70,7 @@ sub add {
 
     for my $tag (@$TAGS) {
         if (my $val = $data->{$tag}) {
-            printf $fh "  %-12s = {%s},\n", $tag, $val;
+            printf $fh "  %-12s = {{%s}},\n", $tag, $val;
         }
     }
 
